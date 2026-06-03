@@ -7,17 +7,17 @@ Es dient der Dokumentation, Planung und Entwicklung eines prototypischen Analyse
 
 ---
 
-# Inhaltsverzeichnis
+## Inhaltsverzeichnis
 
-* Über das Projekt
-* Forschungsfrage
-* Projektziele
-* Repository-Struktur
-* Entwicklungsprozess
+1. [Über das Projekt](#über-das-projekt)
+2. [Forschungsfrage](#forschungsfrage)
+3. [Projektziele](#projektziele)
+4. [Entwicklungsprozess](#entwicklungsprozess)
+5. [Repository-Struktur](#repository-struktur)
 
 ---
 
-# Über das Projekt
+## Über das Projekt
 
 Automatisierte Interaktionen sind ein fester Bestandteil des modernen Internets und begegnen Nutzern insbesondere auf Social-Media-Plattformen regelmäßig. Moderne Bots imitieren zunehmend menschliche Interaktionsmuster und erschweren dadurch die Unterscheidung zwischen menschlicher und automatisierter Aktivität.
 
@@ -25,15 +25,13 @@ Im Rahmen dieses Projekts wird ein prototypisches Analyse- und Visualisierungssy
 
 ---
 
-# Forschungsfrage
+## Forschungsfrage
 
 Wie lassen sich automatisierte Interaktionen erkennen, analysieren und visualisieren?
 
 ---
 
-# Projektziele
-
-## Ziele des Projekts
+## Projektziele
 
 * Entwicklung eines prototypischen Analyse- und Visualisierungssystems
 * Analyse automatisierter Kommentarinteraktionen auf einer Social-Media-Plattform
@@ -42,70 +40,7 @@ Wie lassen sich automatisierte Interaktionen erkennen, analysieren und visualisi
 
 ---
 
-# Repository-Struktur
-
-| Pfad / Datei                                  | Beschreibung                                                 |
-| --------------------------------------------- | ------------------------------------------------------------ |
-| `/docs/`                                      | Enthält alle Projektdokumente                                |
-| `/docs/ADR/`                                  | Architecture Decision Records (ADRs)                         |
-| `/docs/Modelle/`                              | Architektur- und Domänenmodelle                              |
-| `/docs/PoC/`                                  | Proof of Concepts (PoC)                                      |
-| `/docs/PoC/MVP.md`                            | Definition des Minimal Viable Product                        |
-| `/docs/Expose_Praxisprojekt.pdf`              | Exposé des Praxisprojekts                                    |
-| `/docs/Risikoanalyse.md`                      | Risikoanalyse des Projekts                                   |
-| `/docs/User-Stories.md`                       | User Stories und Nutzungsszenarien                           |
-| `/prototype/`                                 | Prototypische Implementierung                                |
-| `/datasets/`                                  | Testdaten und Beispieldatensätze                             |
-| `CHANGELOG.md`                                | Dokumentation aller Änderungen                               |
-| `README.md`                                   | Projektübersicht und Orientierung                            |
-
----
-
-# Geplante Systemkomponenten
-
-Das System soll verschiedene Analyseperspektiven kombinieren:
-
-* Technische Analyse
-
-  * Aktivitätsmuster
-  * Timing
-  * Wiederholungen
-
-* Semantische Analyse
-
-  * NLP-basierte Textanalyse
-  * Ähnlichkeiten zwischen Kommentaren
-
-* Verhaltensbasierte Analyse
-
-  * Interaktionsmuster
-  * Aktivitätsverhalten
-
-* Koordinative Analyse
-
-  * Beziehungen zwischen mehreren Accounts
-  * Synchronisierte Aktivitäten
-
-Die Analyseergebnisse sollen über eine verständliche Visualisierung, beispielsweise ein Ampelsystem oder Risk Scores, dargestellt werden.
-
----
-
-# Technologien
-
-Mögliche Technologien im Projekt:
-
-* React
-* Node.js
-* PostgreSQL
-* Selenium / Browser-Automation-Tools
-* NLP-Bibliotheken
-* JavaScript / TypeScript
-
-Die konkrete technologische Umsetzung wird im Verlauf des Projekts festgelegt.
-
----
-
-# Entwicklungsprozess
+## Entwicklungsprozess
 
 Das Projekt orientiert sich an folgenden Phasen:
 
@@ -115,3 +50,22 @@ Das Projekt orientiert sich an folgenden Phasen:
 4. Evaluation und Dokumentation
 
 Alle wesentlichen Entscheidungen, Änderungen und Erkenntnisse werden fortlaufend dokumentiert.
+
+---
+
+## Repository-Struktur
+
+| Pfad / Datei                                                          | Beschreibung                                                 |
+| --------------------------------------------------------------------- | ------------------------------------------------------------ |
+| `/docs/`                                                              | Enthält alle Projektdokumente                                |
+| [**`/docs/ADR/`**](docs/ADR/)                                         | Architecture Decision Records (ADRs)                         |
+| [**`/docs/Modelle/`**](docs/Modelle/)                                 | Architektur- und Domänenmodelle                              |
+| `/docs/PoC/`                                                          | Proof of Concepts (PoC)                                      |
+| `/docs/PoC/MVP.md`                                                    | Definition des Minimal Viable Product                        |
+| [**`/docs/Expose_Praxisprojekt.pdf`**](docs/Expose_Praxisprojekt.pdf) | Exposé des Praxisprojekts                                    |
+| `/docs/Risikoanalyse.md`                                              | Risikoanalyse des Projekts                                   |
+| `/docs/User-Stories.md`                                               | User Stories und Nutzungsszenarien                           |
+| `/prototype/`                                                         | Prototypische Implementierung                                |
+| `/datasets/`                                                          | Testdaten und Beispieldatensätze                             |
+| [**`CHANGELOG.md`**](./CHANGELOG.md)                                  | Verzeichnis aller Änderungen im Projektverlauf               |
+| [**`README.md`**](./README.md)                                        | Diese Datei - für Überblick und Orientierung                 |
