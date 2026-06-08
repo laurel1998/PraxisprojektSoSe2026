@@ -5,6 +5,8 @@ Willkommen im Repository **PraxisprojektSoSe2026**
 Dieses Repository bildet die technische und organisatorische Grundlage des Praxisprojekts *„Analyse und Visualisierung automatisierter Interaktionen“*.
 Es dient der Dokumentation, Planung und Entwicklung eines prototypischen Analyse- und Visualisierungssystems für automatisierte Kommentarinteraktionen auf Social-Media-Plattformen.
 
+Weitere Details zur Projektplanung, zum Zeitplan sowie zur organisatorischen Struktur finden sich im Miro-Board: https://miro.com/app/board/uXjVHf4O0n4=/?share_link_id=923916360003
+
 ---
 
 ## Inhaltsverzeichnis
@@ -60,6 +62,7 @@ Alle wesentlichen Entscheidungen, Änderungen und Erkenntnisse werden fortlaufen
 | `/docs/`                                                              | Enthält alle Projektdokumente                                |
 | [**`/docs/ADR/`**](docs/ADR/)                                         | Architecture Decision Records (ADRs)                         |
 | [**`/docs/Modelle/`**](docs/Modelle/)                                 | Architektur- und Domänenmodelle                              |
+| [**`/docs/Research-Notes/`**](docs/Research-Notes/)                   | Verzeichnis zur Dokumentation von Forschungsergebnissen      |
 | `/docs/PoC/`                                                          | Proof of Concepts (PoC)                                      |
 | `/docs/PoC/MVP.md`                                                    | Definition des Minimal Viable Product                        |
 | [**`/docs/Expose_Praxisprojekt.pdf`**](docs/Expose_Praxisprojekt.pdf) | Exposé des Praxisprojekts                                    |
