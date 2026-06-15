@@ -4,6 +4,15 @@ Alle nennenswerten Änderungen an diesem Projekt werden in dieser Datei dokument
 Architekturentscheidungen sind über ADR-Dateien [(Architecture Decision Records)](docs/ADR/) dokumentiert.
 
 
+
+## [0.4.0] – 15.06.2026
+### Hinzugefügt
+- [Risikoanalyse](docs/Risikoanalyse.md) durchgeführt
+  - Aufstellung der Top 5 - Risiken
+  - Ansätze zur Risikominderung
+
+
+
 ## [0.3.0] – 08.06.2026
 ### Hinzugefügt
 - [Forschungsstand](docs/Research-Notes/Forschungsstand.md) recherchiert
