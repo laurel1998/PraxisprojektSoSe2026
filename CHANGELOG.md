@@ -4,6 +4,13 @@ Alle nennenswerten Änderungen an diesem Projekt werden in dieser Datei dokument
 Architekturentscheidungen sind über ADR-Dateien [(Architecture Decision Records)](docs/ADR/) dokumentiert.
 
 
+## [0.5.0] – 25.06.2026
+### Hinzugefügt
+- [Marktrecherche](docs/Research-Notes/Marktrecherche.md) durchgeführt
+  - Ansätze, Technologien und Visualisierungskonzepte bereits bestehender Lösungen
+  - Abgrenzungen für den Prototyp
+
+
 
 ## [0.4.0] – 15.06.2026
 ### Hinzugefügt
