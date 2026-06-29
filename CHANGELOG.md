@@ -4,6 +4,14 @@ Alle nennenswerten Änderungen an diesem Projekt werden in dieser Datei dokument
 Architekturentscheidungen sind über ADR-Dateien [(Architecture Decision Records)](docs/ADR/) dokumentiert.
 
 
+## [0.6.0] – 29.06.2026
+### Hinzugefügt
+- [MVP](docs/PoC/MVP.md) definiert
+  - Grundprinzip und Fokus
+  - Kernfunktionen für den Prototyp
+
+
+
 ## [0.5.0] – 25.06.2026
 ### Hinzugefügt
 - [Marktrecherche](docs/Research-Notes/Marktrecherche.md) durchgeführt
