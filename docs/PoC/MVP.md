@@ -19,22 +19,17 @@ Kommentarinteraktion → Datenerfassung → Merkmalsextraktion → Risk Score �
 
 ## Kernfunktionen (MVP-Umfang)
 
-* **Datenerfassung**
-  Erfassung von Kommentar-, Account- und Interaktionsdaten einer gewählten Plattform
+* Datenerfassung: Erfassung von Kommentar-, Account- und Interaktionsdaten einer gewählten Plattform
 
-* **Merkmalsextraktion**
-  Analyse ausgewählter Merkmalsgruppen:
-
+* Analyse ausgewählter Merkmalsgruppen:
   * technische Merkmale
   * semantische Merkmale
   * verhaltensbasierte Merkmale
   * koordinative Merkmale
 
-* **Heuristische Bewertung**
-  Berechnung eines einfachen Risk Scores auf Basis definierter Regeln und Gewichtungen
+* Heuristische Bewertung: Berechnung eines einfachen Risk Scores auf Basis definierter Regeln und Gewichtungen
 
-* **Visualisierung**
-  Darstellung der Analyseergebnisse direkt im Nutzungskontext (z. B. Ampelsystem oder Score-Indikator)
+* Visualisierung: Darstellung der Analyseergebnisse direkt im Nutzungskontext (z. B. Ampelsystem oder Score-Indikator)
 
 ---
 
