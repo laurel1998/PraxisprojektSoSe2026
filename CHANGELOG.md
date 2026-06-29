@@ -6,10 +6,12 @@ Architekturentscheidungen sind über ADR-Dateien [(Architecture Decision Records
 
 ## [0.6.0] – 29.06.2026
 ### Hinzugefügt
-- [MVP](docs/PoC/MVP.md) definiert
+- [MVP](docs/MVP.md) definiert
   - Grundprinzip und Fokus
   - Kernfunktionen für den Prototyp
-
+- Grundlage für [PoCs](docs/PoC/) erstellt
+  - erste Versionen als Basis für die Erarbeitung
+  - Ziel, Scope und Kriterien festgelegt
 
 
 ## [0.5.0] – 25.06.2026
