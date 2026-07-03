@@ -44,10 +44,14 @@ Für jede Plattform wird geprüft:
 
 * Existenz einer API
 * Zugriffsmöglichkeiten durch Scraping
+* Authentifizierungsaufwand
+* Rate Limits
+* Moderationsform
+* Sichtbarkeit automatisierter Interaktionen
+* Validierungsmöglichkeiten
 * Verfügbarkeit von:
-
   * Kommentaren
-  * Replies
+  * Replies (Rekonstruierbarkeit von Threadstrukturen)
   * Timestamps
   * Accountinformationen
   * Profilinformationen
@@ -73,17 +77,15 @@ Eine Plattform gilt als geeignet, wenn:
 * Plattform APIs
 * API-Dokumentationen
 * Browser Developer Tools
-* Testskripte
-* Beispiel-Kommentarthreads
 
 ---
 
 ## Durchführung
 
-1. Auswahl repräsentativer Kommentarthreads pro Plattform
-2. Test des Datenzugriffs via API oder Scraping
-3. Dokumentation verfügbarer Datenfelder
-4. Vergleich der Plattformen anhand der Evaluationskriterien
+1. Analyse der offiziellen API-Dokumentationen der ausgewählten Plattformen
+2. Prüfung der öffentlich sichtbaren Plattformstrukturen im Browser
+3. Systematische Erfassung und Gegenüberstellung der Ergebnisse in einer Vergleichsmatrix
+4. Bewertung der Plattformen auf Grundlage der Evaluationskriterien
 
 ---
 
