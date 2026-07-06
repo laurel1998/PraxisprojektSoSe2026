@@ -1,6 +1,6 @@
 # 01-PoC: Datenerfassung
 
-**Status:** In Progress
+**Status:** Done
 
 ---
 
@@ -91,13 +91,17 @@ Eine Plattform gilt als geeignet, wenn:
 
 ## Ergebnisse
 
-Wird im Verlauf ergänzt.
+Die Ergebnisse der Plattformanalyse sind in einer [Vergleichsmatrix](/docs/PoC/Artefakte/01-PlattformVergleich.png) dokumentiert.
+
+Die Auswertung zeigt, dass sich die untersuchten Plattformen insbesondere hinsichtlich der verfügbaren Account- und Interaktionsdaten sowie der technischen Rahmenbedingungen unterscheiden. Während alle Plattformen grundsätzlich öffentliche Daten für eine Analyse bereitstellen, bestehen deutliche Unterschiede beim Datenzugriff, der Verfügbarkeit relevanter Account-Merkmale sowie der Rekonstruierbarkeit von Interaktionsstrukturen.
+
+Mastodon bietet die umfassendste Abdeckung der betrachteten Analysemerkmale. Die föderierte Architektur führt jedoch dazu, dass Datenzugang, Richtlinien und API-Funktionalitäten je nach Instanz variieren und eine einheitliche Datenerhebung erschweren. Reddit zeichnet sich hingegen durch einen technisch einfachen Datenzugriff sowie gut rekonstruierbare Kommentar- und Threadstrukturen aus. YouTube weist eine hohe Sichtbarkeit automatisierter Interaktionen auf, bietet jedoch keine vollständige Interaktionshistorie einzelner Nutzer. Threads ist aufgrund höherer Zugangshürden und eingeschränkter Account- und Interaktionsdaten für den Projektkontext weniger geeignet.
 
 ---
 
 ## Entscheidung / Konsequenzen
 
-Wird nach Abschluss des PoC dokumentiert.
+Auf Basis der Evaluation wird Reddit als primäre Plattform für den MVP weiterverfolgt. Ausschlaggebend sind insbesondere die gute Verfügbarkeit von Kommentar- und Interaktionsdaten, die stabile API sowie die hohe Rekonstruierbarkeit von Threadstrukturen. Die detaillierte Begründung erfolgt im zugehörigen ADR.
 
 Die Ergebnisse bilden die Grundlage für:
 

@@ -4,6 +4,16 @@ Alle nennenswerten Änderungen an diesem Projekt werden in dieser Datei dokument
 Architekturentscheidungen sind über ADR-Dateien [(Architecture Decision Records)](docs/ADR/) dokumentiert.
 
 
+## [0.7.0] – 06.07.2026
+### Bearbeitet
+- [PoC zur Datenerfassung](/docs/PoC/01-poc-datenerfassung.md) abgeschlossen
+### Hinzugefügt
+- [Vergleichsmatrix](/docs/PoC/Artefakte/01-PlattformVergleich.png) zur Plattformevaluation
+  - Technische Zugriffsmöglichkeiten
+  - Verfügbare Analysemerkmale
+
+
+
 ## [0.6.0] – 29.06.2026
 ### Hinzugefügt
 - [MVP](docs/MVP.md) definiert
