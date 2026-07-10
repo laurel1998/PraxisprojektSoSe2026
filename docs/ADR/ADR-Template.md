@@ -1,4 +1,4 @@
-# XX-ADR: Titel der Entscheidung
+# -ADR: Titel der Entscheidung
 
 **Status:** vorgeschlagen | entschieden | verworfen  
 **Datum:** DD-MM-YYYY  
