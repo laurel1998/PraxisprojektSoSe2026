@@ -9,6 +9,9 @@ Architekturentscheidungen sind über ADR-Dateien [(Architecture Decision Records
 - [01-ADR:](/docs/ADR/01-adr-plattformwahl.md) Plattformwahl
   - Begründung der Entscheidung
   - Festlegung von Folgen und ToDos
+- [02-ADR:](/docs/ADR/02-adr-datenzugriffsstrategie.md) Datenzugriffsstrategie
+  - Begründung der Entscheidung
+  - Grundlage für die Analyse der Merkmale
 
 
 
