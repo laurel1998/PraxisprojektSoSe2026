@@ -4,6 +4,14 @@ Alle nennenswerten Änderungen an diesem Projekt werden in dieser Datei dokument
 Architekturentscheidungen sind über ADR-Dateien [(Architecture Decision Records)](docs/ADR/) dokumentiert.
 
 
+## [0.8.0] – 10.07.2026
+### Hinzugefügt
+- [01-ADR:](/docs/ADR/01-adr-plattformwahl.md) Plattformwahl
+  - Begründung der Entscheidung
+  - Festlegung von Folgen und ToDos
+
+
+
 ## [0.7.0] – 06.07.2026
 ### Bearbeitet
 - [PoC zur Datenerfassung](/docs/PoC/01-poc-datenerfassung.md) abgeschlossen
