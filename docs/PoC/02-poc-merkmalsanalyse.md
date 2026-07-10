@@ -19,8 +19,8 @@ Validierung der definierten Merkmalsgruppen und Prüfung ihrer praktischen Umset
 Zentrale Fragen:
 
 * Welche Merkmale sind technisch messbar?
-* Welche Merkmale liefern brauchbare Hinweise?
-* Welche Merkmale lassen sich sinnvoll kombinieren?
+* Welche Merkmale liefern brauchbare Hinweise bzw. eignen sich für die heuristische Bewertung?
+* Welche Merkmale stehen auf Reddit tatsächlich zur Verfügung?
 
 ---
 
@@ -33,20 +33,35 @@ Untersucht werden die im Forschungsstand abgeleiteten Merkmalsgruppen:
 * verhaltensbasierte Merkmale
 * koordinative Merkmale
 
-Im Fokus steht zunächst die Analyse einzelner Kommentarinteraktionen und ihrer unmittelbaren Kontexte.
+Im Fokus steht zunächst die Analyse einzelner Kommentarinteraktionen und ihrer unmittelbaren Kontexte. Nicht verfügbare Merkmale werden dokumentiert und für den MVP ausgeschlossen.
 
 ---
 
 ## Methodik
 
-Für jede Merkmalsgruppe werden exemplarische Features definiert und auf Testdaten angewendet.
+Für jede Merkmalsgruppe wird untersucht:
+
+- ob das Merkmal auf Reddit verfügbar ist
+- ob es technisch extrahiert werden kann
+- welchen potenziellen Beitrag es zur heuristischen Bewertung leistet
+- welcher Implementierungsaufwand für den MVP zu erwarten ist
+
+Die Ergebnisse werden vergleichend dokumentiert.
+
+---
 
 Technische Merkmale: 
 
 * Accountalter
 * Profilinformationen
-* Anzahl und Verhältnis von Followern und Freunden
+* Accountinformationen
 * Anzahl von Interaktionen
+
+NICHT verfügbar: 
+
+* Anzahl und Verhältnis von Followern und Freunden
+
+---
 
 Semantische Merkmale:
 
@@ -54,14 +69,21 @@ Semantische Merkmale:
 * Sentiment
 * Links und Hashtags
 
+---
+
 Verhaltensbasierte Merkmale:
 
 * Posting-Frequenz
 * Aktivitätszeiten und Aktivitätsmuster
+
+NICHT verfügbar: 
+
 * Tippgeschwindigkeit
 * Scrollverhalten
 
-**Koordinative Merkmale**
+---
+
+Koordinative Merkmale:
 
 * zeitliche Synchronität
 * ähnliche Verhaltensweisen und Kommentare
@@ -84,21 +106,19 @@ Ein Merkmal gilt als relevant, wenn:
 
 ## Ressourcen
 
-* Forschungsstand
+* [Forschungsstand](/docs/Research-Notes/Forschungsstand.md)
 * Plattformdaten aus [01-PoC:](/docs/PoC/01-poc-datenerfassung.md) Datenerfassung
 * Testdatensätze
-* NLP-Bibliotheken
-* Analyse-Skripte
 
 ---
 
 ## Durchführung
 
-1. Auswahl geeigneter Testdaten
-2. Definition exemplarischer Features
-3. Implementierung erster Extraktionslogiken
-4. Analyse und Vergleich der Ergebnisse
-5. Bewertung der Umsetzbarkeit und Relevanz
+1. Ableitung relevanter Merkmale aus dem Forschungsstand
+2. Prüfung der Verfügbarkeit auf Reddit
+3. Bewertung der technischen Extrahierbarkeit
+4. Bewertung der Eignung für den MVP
+5. Dokumentation der Ergebnisse
 
 ---
 
@@ -108,11 +128,11 @@ Wird im Verlauf ergänzt.
 
 ---
 
-## Entscheidungen / Konsequenzen
+## Entscheidung / Konsequenzen
 
 Wird nach Abschluss des PoC dokumentiert.
 
 Die Ergebnisse bilden die Grundlage für:
 
 * [03-ADR:](/docs/ADR/03-adr-merkmalsmodell.md) Merkmalsmodell
-* [04-ADR:](/docs/ADR/04-adr-risc-score.md) Risc Score
+* [04-ADR:](/docs/ADR/04-adr-risc-score.md) Risk Score
