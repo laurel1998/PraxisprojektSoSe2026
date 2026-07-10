@@ -52,9 +52,9 @@ Die Ergebnisse werden vergleichend dokumentiert.
 
 Technische Merkmale: 
 
-* Accountalter
-* Profilinformationen
-* Accountinformationen
+MERKMALE spezifizieren!!
+
+* Accountinformationen (u.a. Accountalter,... ???)
 * Anzahl von Interaktionen
 
 NICHT verfügbar: 
@@ -89,7 +89,7 @@ Koordinative Merkmale:
 * ähnliche Verhaltensweisen und Kommentare
 * koordinierte Verbreitung von Inhalten
 
-Die Ergebnisse werden hinsichtlich Aussagekraft und Umsetzbarkeit bewertet.
+Die Ergebnisse werden hinsichtlich Aussagekraft und Umsetzbarkeit, sowie Verfügbarkeit und Aufwand bewertet. (doppelt?)
 
 ---
 
@@ -109,6 +109,7 @@ Ein Merkmal gilt als relevant, wenn:
 * [Forschungsstand](/docs/Research-Notes/Forschungsstand.md)
 * Plattformdaten aus [01-PoC:](/docs/PoC/01-poc-datenerfassung.md) Datenerfassung
 * Testdatensätze
+* API Dokumentation
 
 ---
 

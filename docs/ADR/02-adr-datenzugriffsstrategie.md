@@ -23,9 +23,9 @@ Im Rahmen von PoC 01 wurde untersucht, welche Zugriffsmöglichkeiten Reddit für
 
 ## Entscheidung
 
-Für den Prototyp wird ein hybrider Datenzugriff gewählt, der API und DOM-Scraping kombiniert.
+Für den Prototyp wird die Reddit API als primäre Datenquelle verwendet.
 
-Die Reddit API dient als primäre Datenquelle für strukturierte Informationen wie Kommentare, Zeitstempel und Accountdaten. DOM-Scraping wird ergänzend eingesetzt, sofern dies für die Erfassung öffentlich sichtbarer Inhalte erforderlich ist. Die Kombination beider Ansätze ermöglicht einen flexiblen Datenzugriff und reduziert die Abhängigkeit von einer einzelnen Schnittstelle. Dadurch kann der Datenzugriff an die jeweiligen Anforderungen der Anwendung angepasst werden und schafft zugleich die technische Grundlage für eine Darstellung der Analyseergebnisse direkt im Nutzungskontext.
+Die API stellt die für die Merkmalsanalyse benötigten Informationen wie Kommentare, Zeitstempel und Accountdaten strukturiert bereit und ermöglicht einen konsistenten Zugriff auf öffentliche Informationen. Ein ergänzender Zugriff über DOM-Scraping wird für die Datenerfassung im MVP nicht benötigt.
 
 ---
 
@@ -33,16 +33,15 @@ Die Reddit API dient als primäre Datenquelle für strukturierte Informationen w
 
 **Folgen**
 
-- Die Datenerfassung wird aufgeteilt und muss sowohl API- als auch DOM-Daten berücksichtigen
-- Änderungen einer einzelnen Datenquelle können leichter kompensiert werden durch flexible Kombination der Zugriffsstrategie 
+- Die Datenerfassung basiert vollständig auf der Reddit API
 
 **To-dos**
 
-- Umsetzung der Merkmalsanalyse [(02-PoC)](/docs/PoC/02-poc-merkmalsanalyse.md)
+- Analyse der Merkmale [(02-PoC)](/docs/PoC/02-poc-merkmalsanalyse.md)
 - Ableitung des Merkmalsmodells [(03-ADR)](/docs/ADR/03-adr-merkmalsmodell.md)
 
 ---
 
 ## Probleme
 
-API und DOM stellen Informationen in unterschiedlicher Struktur und unterschiedlichem Umfang bereit. Diese Unterschiede müssen bei der Merkmalsanalyse berücksichtigt werden. Im Rahmen der Merkmalsanalyse wird daher festgelegt, welche Datenquellen für die einzelnen Merkmale genutzt werden und wie diese konsistent verarbeitet werden können.
+Die Merkmalsanalyse ist auf die über die Reddit API verfügbaren Daten beschränkt. Einzelne Merkmale, beispielsweise Followerinformationen oder clientseitige Interaktionsdaten, können daher im MVP nicht berücksichtigt werden.
