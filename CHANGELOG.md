@@ -3,6 +3,21 @@
 Alle nennenswerten Änderungen an diesem Projekt werden in dieser Datei dokumentiert.
 Architekturentscheidungen sind über ADR-Dateien [(Architecture Decision Records)](docs/ADR/) dokumentiert.
 
+## [0.9.0] - 10.08.2026
+### Dokumentation
+- Antrag auf Zugriff auf die Reddit API eingereicht (13.07.2026)
+- Absage des Requests (24.07.2026)
+- YouTube Data API v3 eingerichtet und getestet (03.08.2026)
+- Zugriff auf öffentliche Videodaten & Kommentardaten erfolgreich validiert (04.08.2026)
+- Auswirkungen auf folgende Dateien:
+
+### Bearbeitet
+- [PoC zur Datenerfassung](/docs/PoC/01-poc-datenerfassung.md) 
+- [01-ADR:](/docs/ADR/01-adr-plattformwahl.md) 
+- [02-ADR:](/docs/ADR/02-adr-datenzugriffsstrategie.md)
+- [PoC zur Merkmalsextraktion und Analyse](/docs/PoC/02-poc-merkmalsanalyse.md) 
+
+
 
 ## [0.8.0] – 10.07.2026
 ### Hinzugefügt

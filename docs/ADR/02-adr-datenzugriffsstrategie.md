@@ -1,7 +1,7 @@
 # 02-ADR: Datenzugriffsstrategie
 
 **Status:** entschieden  
-**Datum:** 10-07-2026
+**Datum:** 05-08-2026
 
 ---
 
@@ -9,7 +9,7 @@
 
 Für die Umsetzung des MVP muss festgelegt werden, wie Kommentar-, Account- und Interaktionsdaten der ausgewählten Plattform erfasst werden.
 
-Im Rahmen von PoC 01 wurde untersucht, welche Zugriffsmöglichkeiten Reddit für öffentliche Daten bereitstellt. Dabei zeigte sich, dass strukturierte Daten wie Kommentare, Zeitstempel und Accountinformationen über die Reddit API verfügbar sind. Gleichzeitig können öffentlich sichtbare Inhalte der Kommentaransicht direkt über das DOM der Webseite ausgelesen werden.
+Im Rahmen von PoC 01 wurde untersucht, welche Zugriffsmöglichkeiten YouTube für öffentliche Daten bereitstellt. Dabei zeigte sich, dass strukturierte Daten wie Kommentare, Zeitstempel und Accountinformationen über die YouTube API verfügbar sind. Gleichzeitig können öffentlich sichtbare Inhalte der Kommentaransicht direkt über das DOM der Webseite ausgelesen werden.
 
 ---
 
@@ -23,9 +23,9 @@ Im Rahmen von PoC 01 wurde untersucht, welche Zugriffsmöglichkeiten Reddit für
 
 ## Entscheidung
 
-Für den Prototyp wird die Reddit API als primäre Datenquelle verwendet.
+Für den Prototyp wird die YouTube API als primäre Datenquelle verwendet.
 
-Die API stellt die für die Merkmalsanalyse benötigten Informationen wie Kommentare, Zeitstempel und Accountdaten strukturiert bereit und ermöglicht einen konsistenten Zugriff auf öffentliche Informationen. Ein ergänzender Zugriff über DOM-Scraping wird für die Datenerfassung im MVP nicht benötigt.
+Die API stellt die für die Merkmalsanalyse benötigten Informationen wie Kommentare, Zeitstempel und Accountdaten strukturiert bereit und ermöglicht einen konsistenten Zugriff auf öffentliche Informationen. Ein ergänzender Zugriff über DOM-Scraping wird zu diesem Zeitpunkt für die Datenerfassung im MVP nicht benötigt. Die Nutzung einer einzelnen Datenquelle reduziert die technische Komplexität und erleichtert die Reproduzierbarkeit der Ergebnisse.
 
 ---
 
@@ -33,7 +33,7 @@ Die API stellt die für die Merkmalsanalyse benötigten Informationen wie Kommen
 
 **Folgen**
 
-- Die Datenerfassung basiert vollständig auf der Reddit API
+- Die Datenerfassung basiert vollständig auf der YouTube API
 
 **To-dos**
 
@@ -44,4 +44,4 @@ Die API stellt die für die Merkmalsanalyse benötigten Informationen wie Kommen
 
 ## Probleme
 
-Die Merkmalsanalyse ist auf die über die Reddit API verfügbaren Daten beschränkt. Einzelne Merkmale, beispielsweise Followerinformationen oder clientseitige Interaktionsdaten, können daher im MVP nicht berücksichtigt werden.
+Die Merkmalsanalyse ist auf die über die YouTube API verfügbaren Daten beschränkt. Insbesondere steht keine vollständige Interaktionshistorie einzelner Nutzer zur Verfügung. Merkmale, die langfristige Aktivitätsmuster oder plattformübergreifende Beziehungen erfordern, können daher im MVP nur eingeschränkt berücksichtigt werden.

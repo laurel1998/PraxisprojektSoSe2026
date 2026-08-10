@@ -95,13 +95,15 @@ Die Ergebnisse der Plattformanalyse sind in einer [Vergleichsmatrix](/docs/PoC/A
 
 Die Auswertung zeigt, dass sich die untersuchten Plattformen insbesondere hinsichtlich der verfügbaren Account- und Interaktionsdaten sowie der technischen Rahmenbedingungen unterscheiden. Während alle Plattformen grundsätzlich öffentliche Daten für eine Analyse bereitstellen, bestehen deutliche Unterschiede beim Datenzugriff, der Verfügbarkeit relevanter Account-Merkmale sowie der Rekonstruierbarkeit von Interaktionsstrukturen.
 
-Mastodon bietet die umfassendste Abdeckung der betrachteten Analysemerkmale. Die föderierte Architektur führt jedoch dazu, dass Datenzugang, Richtlinien und API-Funktionalitäten je nach Instanz variieren und eine einheitliche Datenerhebung erschweren. Reddit zeichnet sich hingegen durch einen technisch einfachen Datenzugriff sowie gut rekonstruierbare Kommentar- und Threadstrukturen aus. YouTube weist eine hohe Sichtbarkeit automatisierter Interaktionen auf, bietet jedoch keine vollständige Interaktionshistorie einzelner Nutzer. Threads ist aufgrund höherer Zugangshürden und eingeschränkter Account- und Interaktionsdaten für den Projektkontext weniger geeignet.
+Mastodon bietet die umfassendste Abdeckung der betrachteten Analysemerkmale. Die föderierte Architektur führt jedoch dazu, dass Datenzugang, Richtlinien und API-Funktionalitäten je nach Instanz variieren und eine einheitliche Datenerhebung erschweren. Reddit zeichnet sich durch gut rekonstruierbare Kommentar- und Threadstrukturen aus. YouTube weist eine hohe Sichtbarkeit automatisierter Interaktionen auf und bietet umfangreiche Kommentar- und Threaddaten, ermöglicht jedoch keine vollständige Interaktionshistorie einzelner Nutzer. Threads ist aufgrund höherer Zugangshürden und eingeschränkter Account- und Interaktionsdaten für den Projektkontext weniger geeignet.
 
 ---
 
 ## Entscheidung / Konsequenzen
 
-Auf Basis der Evaluation wird Reddit als primäre Plattform für den MVP weiterverfolgt. Ausschlaggebend sind insbesondere die gute Verfügbarkeit von Kommentar- und Interaktionsdaten, die stabile API sowie die hohe Rekonstruierbarkeit von Threadstrukturen. Die detaillierte Begründung erfolgt im zugehörigen ADR.
+Auf Basis der theoretischen Evaluation wurde Reddit zunächst als primäre Plattform für den MVP ausgewählt. Die praktische Validierung des API-Zugriffs zeigte jedoch, dass der Zugriff auf die Reddit API einen Genehmigungsprozess voraussetzt und der entsprechende Antrag abgelehnt wurde.
+
+Aus diesem Grund wird YouTube als neue Plattform für die prototypische Umsetzung des MVP weiterverfolgt. Ausschlaggebend sind insbesondere der technisch unkomplizierte Zugang über die YouTube Data API und die gute Verfügbarkeit von Kommentar- und Threadstrukturen sowie die ausreichende Verfügbarkeit relevanter Merkmale für den MVP. Die detaillierte Begründung erfolgt im zugehörigen ADR.
 
 Die Ergebnisse bilden die Grundlage für:
 

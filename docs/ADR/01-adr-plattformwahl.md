@@ -1,7 +1,7 @@
 # 01-ADR: Plattformwahl
 
 **Status:** entschieden  
-**Datum:** 10-07-2026
+**Datum:** 03-08-2026
 
 ---
 
@@ -24,16 +24,19 @@ Im Rahmen von PoC 01 wurden Reddit, YouTube, Mastodon und Threads hinsichtlich D
 
 ## Entscheidung
 
-Für die prototypische Umsetzung wird Reddit als Zielplattform verwendet.
+Für die prototypische Umsetzung wird YouTube als Zielplattform verwendet.
 
-Die Plattformwahl basiert auf einer Abwägung zwischen Datenverfügbarkeit, technischer Umsetzbarkeit und Eignung für die im MVP vorgesehenen Analysemerkmale. Reddit bietet zwar nicht die umfassendste Abdeckung aller betrachteten Merkmale, stellt jedoch eine geeignete Grundlage für den Prototyp dar. Die Entscheidung basiert auf folgenden Kriterien:
+Die Plattformwahl basiert auf einer Abwägung zwischen Datenverfügbarkeit, technischer Umsetzbarkeit und Eignung für die im MVP vorgesehenen Analysemerkmale. Reddit wurde im Projektverlauf zunächst als Zielplattform ausgewählt. Die praktische Validierung des Datenzugriffs zeigte jedoch, dass für die Nutzung der Reddit API ein Genehmigungsprozess erforderlich ist und der eingereichte Antrag für das Projekt abgelehnt wurde.
 
-- unkomplizierter Datenzugriff über API und DOM-Scraping
+Die Entscheidung für YouTube basiert auf folgenden Kriterien:
+
+- unkomplizierter Datenzugriff auf öffentliche Daten über API und DOM-Scraping
 - gut rekonstruierbare Kommentar- und Threadstrukturen
+- hohe Sichtbarkeit potenziell automatisierter Interaktionen
 - ausreichende Verfügbarkeit relevanter Account- und Interaktionsdaten
 - technisch überschaubarer Implementierungsaufwand
 
-Im Vergleich der untersuchten Plattformen zeigte sich, dass Mastodon zwar die größte Merkmalsabdeckung bietet, die föderierte Architektur jedoch eine einheitliche Datenerhebung erschwert. YouTube weist eine hohe Sichtbarkeit automatisierter Interaktionen auf und bietet umfangreiche Kommentar- und Threaddaten, ermöglicht jedoch keine vollständige Interaktionshistorie einzelner Nutzer. Threads weist einen höheren Authentifizierungsaufwand sowie Einschränkungen bei Account- und Interaktionsdaten auf.
+Im Vergleich der untersuchten Plattformen zeigte sich, dass Mastodon zwar die größte Merkmalsabdeckung bietet, die föderierte Architektur jedoch eine einheitliche Datenerhebung erschwert. Threads weist einen höheren Authentifizierungsaufwand sowie Einschränkungen bei Account- und Interaktionsdaten auf. Reddit bietet grundsätzlich geeignete Kommentar- und Threadstrukturen, steht aufgrund der Zugangsbeschränkungen jedoch nicht für die prototypische Umsetzung zur Verfügung. YouTube ermöglicht zwar keine vollständige Interaktionshistorie einzelner Nutzer, stellt jedoch eine geeignete Grundlage für die Analyse zeitlicher, semantischer und koordinationsbezogener Merkmale dar.
 
 ---
 
@@ -41,9 +44,9 @@ Im Vergleich der untersuchten Plattformen zeigte sich, dass Mastodon zwar die gr
 
 **Folgen**
 
-- Die weitere Entwicklung erfolgt auf Basis von Reddit
-- Alle nachfolgenden Proofs of Concept orientieren sich an der Reddit-Datenstruktur
-- Die Datenerfassung wird auf den Zugriff öffentlicher Reddit-Daten ausgelegt
+- Die weitere Entwicklung erfolgt auf Basis von YouTube
+- Alle nachfolgenden Proofs of Concept orientieren sich an der YouTube-Datenstruktur
+- Die Datenerfassung wird auf öffentliche Kommentar- und Interaktionsdaten ausgelegt
 
 **To-dos**
 
@@ -54,6 +57,6 @@ Im Vergleich der untersuchten Plattformen zeigte sich, dass Mastodon zwar die gr
 
 ## Probleme
 
-Reddit stellt keine Informationen über Follower oder das Verhältnis von Followern und Freunden bereit. Diese Merkmale können daher im MVP nicht berücksichtigt werden.
+YouTube stellt keine vollständige Interaktionshistorie einzelner Nutzer bereit. Verhaltensmerkmale, die eine langfristige Analyse der Nutzeraktivität erfordern, können daher nur eingeschränkt berücksichtigt werden.
 
-Stattdessen liegt der Schwerpunkt der Analyse auf verfügbaren verhaltens- und koordinationsbezogenen Merkmalen. Insbesondere auf Aktivitätsmustern, zeitlichen Zusammenhängen sowie der Analyse von Kommentar- und Threadstrukturen.
+Der Schwerpunkt der Analyse liegt stattdessen auf verfügbaren semantischen, zeitlichen und koordinationsbezogenen Merkmalen. Insbesondere werden Kommentarinhalte, Antwortstrukturen sowie zeitliche Zusammenhänge zwischen Interaktionen betrachtet.
