@@ -3,6 +3,15 @@
 Alle nennenswerten Änderungen an diesem Projekt werden in dieser Datei dokumentiert.
 Architekturentscheidungen sind über ADR-Dateien [(Architecture Decision Records)](docs/ADR/) dokumentiert.
 
+
+## [0.10.0] – 12.08.2026
+### Hinzugefügt
+- [03-ADR:](/docs/ADR/03-adr-merkmalsmodell.md) Merkmalsmodell
+- Merkmalsmodell als [tabellarische Übersicht](/docs/ADR/Artefakte/03-Merkmalsmodell-Tabelle.png)
+- [Visualisierung](/docs/Modelle/Risk-Score/Merkmalsmodell.jpg) des Merkmalsmodells
+ 
+
+
 ## [0.9.0] - 10.08.2026
 ### Dokumentation
 - Antrag auf Zugriff auf die Reddit API eingereicht (13.07.2026)
@@ -13,8 +22,8 @@ Architekturentscheidungen sind über ADR-Dateien [(Architecture Decision Records
 
 ### Bearbeitet
 - [PoC zur Datenerfassung](/docs/PoC/01-poc-datenerfassung.md) 
-- [01-ADR:](/docs/ADR/01-adr-plattformwahl.md) 
-- [02-ADR:](/docs/ADR/02-adr-datenzugriffsstrategie.md)
+- [01-ADR:](/docs/ADR/01-adr-plattformwahl.md) Datenerfassung
+- [02-ADR:](/docs/ADR/02-adr-datenzugriffsstrategie.md) Datenzugriffsstrategie
 - [PoC zur Merkmalsextraktion und Analyse](/docs/PoC/02-poc-merkmalsanalyse.md) 
 
 
