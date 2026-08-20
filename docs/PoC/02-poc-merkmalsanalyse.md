@@ -130,7 +130,7 @@ Die Ergebnisse der Merkmalsanalyse sind in einer [Vergleichsmatrix](/docs/PoC/Ar
 
 Technische und semantische Merkmale können überwiegend mit geringem bis mittlerem Aufwand über die YouTube API extrahiert werden. Insbesondere Kanalinformationen, Kommentarinhalte sowie Zeitstempel stehen strukturiert zur Verfügung und bilden eine geeignete Grundlage für die heuristische Bewertung.
 
-Verhaltensbasierte Merkmale wie Posting-Frequenzen oder Aktivitätsmuster sind grundsätzlich analysierbar, können aufgrund der fehlenden Interaktionshistorie einzelner Nutzer jedoch nur eingeschränkt betrachtet werden. Clientseitige Merkmale wie Tippgeschwindigkeit oder Scrollverhalten stehen nicht zur Verfügung.
+Verhaltensbasierte Merkmale wie Posting-Frequenz und Aktivitätsmuster werden für den MVP ausgeschlossen, da aufgrund der fehlenden vollständigen Interaktionshistorie einzelner Nutzer keine Aussage über das allgemeine Nutzerverhalten möglich ist. Clientseitige Merkmale wie Tippgeschwindigkeit oder Scrollverhalten stehen nicht zur Verfügung.
 
 Koordinative Merkmale erfordern eine aufwendigere Analyse mehrerer Kommentare, Accounts und zeitlicher Zusammenhänge. Die Identifikation koordinierter Aktivitäten kann daher nur indirekt über Muster wie zeitliche Synchronität oder inhaltliche Ähnlichkeiten erfolgen.
 

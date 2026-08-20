@@ -1,7 +1,7 @@
 # 03-ADR: Merkmalsmodell
 
 **Status:** entschieden
-**Datum:** 12-08-2026
+**Datum:** 20-08-2026
 
 ---
 
@@ -17,7 +17,7 @@ Ziel ist die Definition eines Merkmalsmodells, das auf den verfügbaren Plattfor
 
 - Verwendung einzelner Merkmale
 - Verwendung kombinierter Merkmale
-- Sowohl einzelne als auch kombinierte Merkmalen
+- Kombination von Merkmalen mit zusätzlichen Kontextinformationen
 
 ---
 
@@ -25,9 +25,9 @@ Ziel ist die Definition eines Merkmalsmodells, das auf den verfügbaren Plattfor
 
 Für den MVP wird ein Merkmalsmodell verwendet, das auf den in PoC 02 identifizierten und für die prototypische Umsetzung geeigneten Merkmalen basiert.
 
-Während einige Merkmale bereits für sich allein Hinweise auf automatisierte Aktivitäten liefern können, entfalten andere ihre Aussagekraft erst durch die Kombination mehrerer Informationen. Ziel ist es, mehrere schwache Hinweise zu aussagekräftigeren Indikatoren automatisierter Aktivitäten zusammenzuführen. Daher umfasst das Merkmalsmodell sowohl Einzelmerkmale als auch kombinierte Merkmale.
+Kommentarinteraktionen bilden den Ausgangspunkt der Analyse. Die Merkmale können dabei den Kommentar selbst, den kommentierenden Kanal oder die Beziehung zu anderen beobachtbaren Kommentaren beschreiben. Merkmale mit einer nachvollziehbaren Beziehung zueinander werden zu kombinierten Merkmalen zusammengeführt, dadurch sollen mehrere schwache Hinweise zu aussagekräftigeren Indikatoren automatisierter Aktivitäten verbunden werden. Andere Merkmale können als zusätzliche Kontextinformationen in die Bewertung einfließen.
 
-Für den MVP werden zunächst folgende Einzelmerkmale und Merkmalskombinationen betrachtet:
+Für den MVP werden zunächst folgende Kombinationen betrachtet:
 
 ---
 
@@ -44,24 +44,12 @@ Kombination aus:
 
 - Kanalalter
 - Kanalbeschreibung
+- Landesangabe
 - Anzahl von Interaktionen: Videos
 - Abonnentenzahl
 - Anzahl der Videoaufrufe
 
 Ziel ist die Einordnung der Glaubwürdigkeit eines Kanals.
-
----
-
-**Räumlich-zeitliche Konsistenz**
-
-Kombination aus:
-
-- Landesangabe
-- Wortwahl und Sprachstil (Sprache)
-- Aktivitätszeiten
-- zeitliche Synchronität
-
-Ziel ist die Identifikation von Widersprüchen oder ungewöhnlichen Aktivitätsmustern.
 
 ---
 
@@ -85,28 +73,19 @@ Kombination aus:
 - Links
 - Hashtags
 
-Ziel ist die Analyse von Auffälligkeiten im Interaktionsvershalten.
+Ziel ist die Analyse von Auffälligkeiten im Interaktionsverhalten.
 
 ---
 
-**Aktivitätsprofil**
-
-- Postingfrequenz
-- Aktivitätszeiten
-- Antwortgeschwindigkeit
-
-Ziel ist die Analyse zeitlicher Aktivitätsmuster und des Antwortverhaltens.
-
----
-
-**Koordinierte Kommentaraktivität**
+**Kommentaraktivität**
 
 Kombination aus:
 
+- Antwortgeschwindigkeit
 - ähnlichen Kommentaren
 - zeitlicher Synchronität
 
-Ziel ist die Identifikation möglicher koordinierter Interaktionen zwischen mehreren Kanälen.
+Ziel ist die Identifikation zeitlich und inhaltlich auffälliger Interaktionen zwischen Kommentaren.
 
 ---
 
@@ -131,4 +110,4 @@ Das vollständige Merkmalsmodell ist nach Gruppen sortiert im Artefakt [03-Merkm
 
 ## Probleme
 
-Einzelne Merkmale besitzen häufig nur eine begrenzte Aussagekraft. Dieser Einschränkung wird begegnet, indem mehrere Einzelmerkmale zu Analysemerkmalen kombiniert werden. Die konkrete Gewichtung der Analysemerkmale erfolgt im nachfolgenden [ADR zum heuristischen Risk Score](/docs/ADR/04-adr-risc-score.md).
+Einzelne Merkmale besitzen häufig nur eine begrenzte Aussagekraft. Dieser Einschränkung wird begegnet, indem mehrere Einzelmerkmale zu Analysemerkmalen kombiniert werden. Die konkrete Bewertung, sowie Gewichtung der Merkmale erfolgt im nachfolgenden [ADR zum heuristischen Risk Score](/docs/ADR/04-adr-risc-score.md).
